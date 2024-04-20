@@ -28,27 +28,31 @@ public class Main
 {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static String url = "https://innovation.ebayinc.com/tech/archive/?section=engineering&page=1";
+
     public static void main( String[] args ) {
 
         //Scrapper scrapper = new EbayScrapper();
         //Scrapper scrapper2 = new Auth0Scapper();
         //Scrapper scrapper3 = new NetflixTechBlogScrapper();
 
-        Scrapper scrapper4 = new PhonepeScrapper();
+        //Scrapper scrapper4 = new PhonepeScrapper();
 
-        //Scrapper scrapper5 = new UberScrapper();
+        Scrapper scrapper5 = new UberScrapper();
+
+        //Scrapper scrapper6 = new UpGradScrapper();
+       // Scrapper scrapper7 = new ZomatoScrapper();
+       // Scrapper scrapper8 = new ZomatoScrapper();
+        List<Blog> blogList = scrapper5.fetchLatestBlogs();
 
 
-        List<Blog> blogList = scrapper4.fetchLatestBlogs();
-
-
-        blogList.forEach(blog -> {
+/*        blogList.forEach(blog -> {
             //BlogManager.createBlog(blog);
             long startTime = System.currentTimeMillis();
-            BlogManagerWithJDBC.insert(blog);
+            //BlogManagerWithJDBC.insert(blog);
+            ;
             logger.info("-------------------------------------------------");
             logger.info("Time taken to insert blog : {} ",System.currentTimeMillis() - startTime);
-        });
+        });*/
 
         saveToCSV(blogList);
 
@@ -60,14 +64,14 @@ public class Main
     }
 
     public static void saveToCSV(List<Blog> blogList){
-        String csvFilePath = "/narender/UberBlog.csv";
+        String csvFilePath = "test.csv";
 
 
 
             try(CSVWriter writer = new CSVWriter(new FileWriter(csvFilePath))){
 
                 for(Blog blog:blogList) {
-                    String[] data = {blog.getTimeDate(), blog.getTitle(), blog.getUrl()};
+                    String[] data = {blog.getCompany(), blog.getTimeDate(), blog.getTitle(), blog.getUrl()};
                     writer.writeNext(data);
                 }
 
