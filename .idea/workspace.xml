@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f49baa18-cc63-467f-af9e-cdc4c135ad09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9456c7a3-516f-4315-b50a-422f87d11b1b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9456c7a3-516f-4315-b50a-422f87d11b1b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/narender/sheduler/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/narender/sheduler/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,7 @@
       <workItem from="1712920635333" duration="3772000" />
       <workItem from="1712932603915" duration="2264000" />
       <workItem from="1712976393276" duration="8033000" />
-      <workItem from="1713610897086" duration="3758000" />
+      <workItem from="1713610897086" duration="5978000" />
     </task>
     <servers />
   </component>
